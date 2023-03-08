@@ -1,1 +1,11 @@
-# example..todo-list_-_client..vanilla_-_server..nodejs-express
+# Todo-list Vanilla
+
+## Client
+
+- HTML CSS Javascript
+
+
+## Server
+
+- Nodejs (express)
+- SQLite
