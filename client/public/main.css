@@ -1,0 +1,45 @@
+/* necessário  */
+ul li.done span.texto {
+  text-decoration: line-through;
+}
+
+ul[data-show="done"] li:not(.done) {
+  display: none
+} 
+
+ul[data-show="to-do"] li.done {
+  display: none
+} 
+
+/* só para aparencia */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li span.texto {
+  display: inline-block;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul li span.status {
+  display: inline-block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
