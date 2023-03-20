@@ -19,9 +19,9 @@ route.post("/", async (req, res) => {
   res.json({ id: result.lastID })
 })
 
-//update
+// update
 route.put("/:id", async (req, res) => {
-  console.log("UDATED", req.params.id)
+  console.log("UPDATED", req.params.id)
   const db = await database()
   const result = await db.run('UPDATE todo SET done=? WHERE id=?', [req.body.done, req.params.id])
   res.json({ id: result.lastID, done: req.body.done })
